@@ -60,6 +60,37 @@ p  { font-size: 21px; line-height: 1.65; color: var(--sub); }
 .grid2x2-cell img { max-height: 18vh; width: auto; mix-blend-mode: multiply; }
 .cell-label { font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-dark); }
 
+/* Round 1 & 2 — 2-col logo comparison */
+.grid2col { display: grid; grid-template-columns: 1fr 1fr; }
+.grid2col-cell { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 36px 48px; gap: 14px; }
+.grid2col-cell img { max-height: 24vh; width: auto; mix-blend-mode: multiply; }
+
+/* After Round 2 — decision layout */
+.decision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 16px; }
+.decision-col { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 0 32px; }
+.decision-col:first-child { border-right: 1px solid rgba(0,0,0,0.08); }
+.decision-col-label { font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sub); margin-bottom: 12px; }
+.decision-col-label.continues { color: var(--accent); }
+.decision-col.dropped { opacity: 0.2; }
+.decision-cell { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 16px 24px; }
+.decision-cell img { max-height: 18vh; width: auto; mix-blend-mode: multiply; }
+
+/* Round 3 — 3-col logo grid */
+.grid3col { display: grid; grid-template-columns: repeat(3, 1fr); }
+.grid3col-cell { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px 32px; gap: 14px; }
+.grid3col-cell img { max-height: 22vh; width: auto; mix-blend-mode: multiply; }
+
+/* All Options — 2-over-3 */
+.grid-final { display: flex; flex-direction: column; align-items: center; margin-top: 8px; }
+.grid-final-row { display: flex; justify-content: center; }
+.grid-final-cell { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 16px 32px; gap: 12px; }
+.grid-final-cell img { max-height: 16vh; width: auto; mix-blend-mode: multiply; }
+
+/* Recommendation — 2 large logos */
+.rec2 { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-top: 28px; }
+.rec2-cell { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.rec2-cell img { max-height: 30vh; width: auto; mix-blend-mode: multiply; }
+
 /* Navigation pill */
 #nav { position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 12px; background: white; border-radius: 32px; padding: 6px 14px; box-shadow: 0 2px 16px rgba(0,0,0,0.18); z-index: 100; }
 #nav button { background: none; border: none; color: var(--navy); font-size: 24px; cursor: pointer; padding: 3px 8px; opacity: 0.8; transition: opacity 0.15s; }
